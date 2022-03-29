@@ -1,0 +1,163 @@
+
+npm create vite@latest	-> frontend
+cd frontend
+npm install
+npm run dev
+
+poetry new backend
+cd backend
+poetry add fastapi
+poetry add uvicorn
+touch main.py -> 
+	
+	from fastapi import FastAPI
+
+	app = FastAPI()
+
+
+	@app.get("/")
+	async def root():
+   		return {"message": "Hello World"}
+
+poetry run uvicorn main:app
+	
+
+
+
+
+
+https://testdriven.io/blog/fastapi-react/
+
+$ mkdir <PROJECT>
+$ cd <PROJECT>
+
+$ mkdir backend
+$ cd backend
+
+$ python3.9 -m venv venv
+$ source venv/bin/activate
+$ export PYTHONPATH=$PWD
+
+(venv)$ pip install fastapi uvicorn
+<PROJECT>
+	└── backend
+   	 ├── main.py
+   	 └── app
+   	     ├── __init__.py
+    	     └── api.py
+
+main.py: 
+	import uvicorn
+
+	if __name__ == "__main__":
+    		uvicorn.run("app.api:app", host="0.0.0.0", port=8000, reload=True)
+
+api.py:
+	from fastapi import FastAPI
+	from fastapi.middleware.cors import CORSMiddleware
+
+
+	app = FastAPI()
+
+	origins = [
+   		"http://localhost:3000",
+   	 	"localhost:3000"
+	]
+
+
+	app.add_middleware(
+  		CORSMiddleware,
+   		allow_origins=origins,
+  		allow_credentials=True,
+  		allow_methods=["*"],
+   	 	allow_headers=["*"]
+	)
+
+
+	@app.get("/", tags=["root"])
+	async def read_root() -> dict:
+    		return {"message": "Welcome to your todo list."}
+
+Why do we need CORSMiddleware? In order to make cross-origin requests -- e.g., requests that originate from a different protocol, IP address, domain name, or port -- you need to enable Cross Origin Resource Sharing (CORS). FastAPI's built-in CORSMiddleware handles this for us.
+
+The above configuration will allow cross-origin requests from our frontend domain and port which will run at localhost:3000.
+
+(venv)$ python main.py
+
+
+npx create-react-app frontend
+cd frontend
+
+$ cd src
+$ mkdir components
+$ cd components
+$ touch {Header,Todos}.jsx
+
+
+
+
+
+
+The useState hook is responsible for managing our application's local state while the useEffect hook allows us to perform operations such as data fetching.
+
+
+Next, create a context for managing global state activities across all components:
+
+In the code block above, we defined a context object via createContext that takes in two provider values: todos and fetchTodos. The fecthTodos function will be defined in the next code block.
+
+Next, add the Todos component:
+Here, we created an empty state variable array, todos, and a state method, setTodos, so we can update the state variable. Next, we defined a function called fetchTodos to retrieve todos from the backend asynchronously and update the todo state variable at the end of the function.
+
+Next, within the Todos component, retrieve the todos using the fetchTodos function and render the data by iterating through the todos state variable:
+
+https://auth0.com/blog/react-context-api-managing-state-with-ease/
+
+
+
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/50025872/how-do-i-connect-a-local-folder-to-an-existing-github-repo
+
+# Initialize the local directory as a Git repository.
+git init
+
+# Add files
+git add .
+
+# Commit your changes
+git commit -m "First commit"
+
+# Add remote origin
+git remote add origin <Remote repository URL>
+# <Remote repository URL> looks like: https://github.com/user/repo.git
+
+# Verifies the new remote URL
+git remote -v
+
+# Push your changes
+git push origin main
+
+git push origin main --force
+
+
+
+https://stackoverflow.com/questions/60160453/vs-code-the-git-repository-has-too-many-active-changes-only-a-subset-of-git-f
+
+A different explanation, not listed yet, might help you if two things are true
+
+you have a .git folder higher up in the folder hierarchy that you are not aware of
+your project that you are working on in VS code does not have an own .git folder
+the 2. point is easy to verify.
+
+Regarding the 1. point, you need to write the following in your terminal while being in the directory of your affected project:
+
+git rev-parse --show-toplevel
+This command searches a .git folder that is higher up in the directory tree of your files and it will return the location of the first encountered git repository. This means you either will receive a fatal not found or a path.
+
+Go to this directory and delete the .git folder (after checking the log to see that you won't loose information) and then create a .git folder in your project directory.
