@@ -161,3 +161,14 @@ git rev-parse --show-toplevel
 This command searches a .git folder that is higher up in the directory tree of your files and it will return the location of the first encountered git repository. This means you either will receive a fatal not found or a path.
 
 Go to this directory and delete the .git folder (after checking the log to see that you won't loose information) and then create a .git folder in your project directory.
+
+
+
+
+
+
+
+https://testdriven.io/blog/fastapi-react/
+https://auth0.com/blog/react-context-api-managing-state-with-ease/
+https://app.netlify.com/teams/maikupero/overview
+coolors
