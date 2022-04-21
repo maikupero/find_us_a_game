@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Tester() {
+function LookUp() {
     return (
-        <div className="tester">
+        <div className="lookup">
             <p>Hello, world!</p>
         </div>
     );
 }
 
-export default Tester
+export default LookUp
