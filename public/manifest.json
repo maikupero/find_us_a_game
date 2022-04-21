@@ -1,0 +1,13 @@
+{
+  "short_name": "Find Us A Game",
+  "name": "Find Us A Game: There is, in fact, a multiplayer game out there for you and your friends.",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

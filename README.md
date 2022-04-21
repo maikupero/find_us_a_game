@@ -1,6 +1,5 @@
 # Find Us A Game
 
-FastAPI Python backing a React frontend.
 Single-page webapp to find just the right game for you and your friends. 
 
 No more browsing steam's massive (and at times, shocking) selection, 
