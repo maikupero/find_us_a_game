@@ -16,5 +16,5 @@ To Do:
     - Cost:  Free, < increments of 5, Any
     - Genre: Puzzle (Baba), Adventure (Valheim), Action (Valorant).
     - Duration/Progression: Linear (RPG), Open (Minecraft), Match (Dota, SlaytheSpire)
-    - Singleplayer Ok? 
-    - Teams?
+    - Style: Cooperative or Competitive?
+
