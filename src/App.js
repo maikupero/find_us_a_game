@@ -1,5 +1,5 @@
 import Background from './Background/background'
-import Nav from './Nav/LookUp/lookup'
+import Nav from './Nav/nav'
 import Main from './Main/main'
 import './App.css';
 

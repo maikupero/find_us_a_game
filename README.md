@@ -9,18 +9,28 @@ Find a game you've never heard of, narrow it down by whatever filters matter to 
 
 To Do: 
 
-- Set up base background
-- Set up simple search function using igdb api.
+- STATE MANAGEMENT: Redux or Native Query
 
-- State Management with Redux or Native Query.
-- Connect to hosting service - Netlify.
+- Connect to hosting service - Netlify or reuse Heroku.
+
+
+
+- SEARCH:
+    - Setting up a search function using igdb api, OAuth twitch.
+    - Display simple data on the game, then:
+        - Add game to find us a game database 
+        - Save game to personal list
+        - View on other platforms.
+
+- BACKGROUND:
 - Design of main component UI (how to find the game)
-- Categories to implement:
-    - Number of players: 1-9+
-    - Cost:  Free, < increments of 5, Any
-    - Genre: Puzzle (Baba), Adventure (Valheim), Action (Valorant).
-    - Duration/Progression: Linear (RPG), Open (Minecraft), Match (Dota, SlaytheSpire)
-    - Style: Cooperative or Competitive?
+    - 
+    - Categories to implement:
+        - Number of players: 1-9+
+        - Cost:  Free, < increments of 5, Any
+        - Genre: Puzzle (Baba), Adventure (Valheim), Action (Valorant).
+        - Duration/Progression: Linear (RPG), Open (Minecraft), Match (Dota, SlaytheSpire)
+        - Style: Cooperative or Competitive?
 
     https://api-docs.igdb.com/#multiplayer-mode
 

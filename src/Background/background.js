@@ -3,9 +3,7 @@ import './background.css'
 
 function Background () {
     return (
-        <div className="background">
-            <canvas></canvas>
-        </div>
+        <div className="background"></div>
     )
 }
 

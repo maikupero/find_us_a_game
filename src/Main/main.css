@@ -1,0 +1,12 @@
+.main {
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: black;
+}
+
+.start { 
+    color: white;
+    font-size: 4rem;
+}
