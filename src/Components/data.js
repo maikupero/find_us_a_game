@@ -24,7 +24,7 @@
 //   "token_type": "bearer"
 // }
 
-
+// Get ClientID & Secret stored as config vars server-side.
 CLIENT_ID = process.env.CLIENT_ID;
 SECRET = process.env.SECRET;
 
