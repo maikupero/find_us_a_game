@@ -1,6 +1,6 @@
-import Background from './Background/background'
-import Nav from './Nav/nav'
-import Main from './Main/main'
+import Background from './Components/Background/background'
+import Nav from './Components/Nav/nav'
+import Main from './Components/Main/main'
 import './App.css';
 
 function App() {
