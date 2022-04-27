@@ -9,12 +9,17 @@ Find a game you've never heard of, narrow it down by whatever filters matter to 
 
 To Do: 
 
-- STATE MANAGEMENT: Redux or Native Query
+- STATE MANAGEMENT: Redux.
 
-- Connect to hosting service - Netlify or reuse Heroku.
+- Connect to hosting service - Heroku.
+    - https://dashboard.heroku.com/apps/
+    - https://github.com/twitchdev/authentication-node-sample/blob/main/index.js
+    - https://dev.twitch.tv/docs/authentication
 
-
-
+- ANIMATIONS: 
+    - https://www.framer.com/developers/
+    - https://youtu.be/nyg5Lpl6AiM
+    
 - SEARCH:
     - Setting up a search function using igdb api, OAuth twitch.
     - Display simple data on the game, then:
