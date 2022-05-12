@@ -1,22 +1,22 @@
 import './nav.css'
 import React, { useState } from 'react';
-
+import * from '../Assets/background'
 function Nav() {
 
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
   
-    const search = evt => {
-      if (evt.key === "Enter") {
-        fetch(`${CLIENT_ID}&client_secret=${SECRET}&grant_type=client_credentials`)
-          .then(res => res.json())
-          .then(result => {
-            setWeather(result);
-            setQuery('');
-            console.log(result);
-          });
-      }
-    }
+    // const search = evt => {
+    //   if (evt.key === "Enter") {
+    //     fetch(`${CLIENT_ID}&client_secret=${SECRET}&grant_type=client_credentials`)
+    //       .then(res => res.json())
+    //       .then(result => {
+    //         setWeather(result);
+    //         setQuery('');
+    //         console.log(result);
+    //       });
+    //   }
+    // }
 
     return (
         <div className="lookup">

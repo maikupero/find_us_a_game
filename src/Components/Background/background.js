@@ -1,9 +1,9 @@
 import React from 'react';
 import './background.css'
 
-function Background () {
+function Background() {
     return (
-        <div className="background"></div>
+        <div className="background"><p>This will be the background.</p></div>
     )
 }
 
