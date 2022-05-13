@@ -9,9 +9,16 @@ Find a game you've never heard of, narrow it down by whatever filters matter to 
 
 To Do: 
 
-- STATE MANAGEMENT: Redux.
+- TESTING: JEST
+    - https://jestjs.io/
 
-- Connect to hosting service - Heroku.
+- HOURLY AUTHENTICATION: Cron
+    - https://cron.com/
+    - https://cron.help/
+
+- STATE MANAGEMENT: Redux
+
+- DOMAIN AND DATABASE - Heroku PostgreSQL
     - https://dashboard.heroku.com/apps/
     - https://github.com/twitchdev/authentication-node-sample/blob/main/index.js
     - https://dev.twitch.tv/docs/authentication
@@ -20,6 +27,9 @@ To Do:
     - https://www.framer.com/developers/
     - https://youtu.be/nyg5Lpl6AiM
     
+- BACKGROUND:
+    - Hardcode with images, or generate images dynamically?
+
 - SEARCH:
     - Setting up a search function using igdb api, OAuth twitch.
     - Display simple data on the game, then:
@@ -27,9 +37,7 @@ To Do:
         - Save game to personal list
         - View on other platforms.
 
-- BACKGROUND:
 - Design of main component UI (how to find the game)
-    - 
     - Categories to implement:
         - Number of players: 1-9+
         - Cost:  Free, < increments of 5, Any
