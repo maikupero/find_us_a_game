@@ -17,6 +17,9 @@ To Do:
     - https://cron.help/
 
 - STATE MANAGEMENT: Redux
+    - https://redux.js.org/introduction/installation
+    - yarn add @reduxjs/toolkit
+    - npx create-react-app my-app --template redux
 
 - DOMAIN AND DATABASE - Heroku PostgreSQL
     - https://dashboard.heroku.com/apps/

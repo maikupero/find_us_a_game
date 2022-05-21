@@ -3,7 +3,7 @@ import './background.css'
 
 function Background() {
     return (
-        <div className="background"><p>This will be the background.</p></div>
+        <div className="background"></div>
     )
 }
 

@@ -1,12 +1,37 @@
 .main {
-    justify-content: center;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
     height: 300px;
     width: 300px;
-    border-radius: 150px;
-    background-color: black;
+    border-radius: 100%;
+
+    background-color: rgba(0,0,0,0.5);
 }
 
 .start { 
-    color: white;
+    position: relative;
+    display: block;
+    z-index: 2;
+
+    padding: 20px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    
+    border-radius: 100% 100%;
+    box-shadow: 0px 5px rgba(0,0,0,0.2);
     font-size: 4rem;
+    color: white;
+    border: none;
+    background-color: rgba(0,200,200,0.5);
+    text-shadow: 0px 5px rgba(0,0,0,0.2);;
+}
+
+.start:hover {
+    cursor: pointer;
 }
