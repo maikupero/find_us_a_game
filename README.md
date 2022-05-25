@@ -8,6 +8,17 @@ or downloading 50 different microtransaction filled apps.
 Find a game you've never heard of, narrow it down by whatever filters matter to you, and start playing!
 
 To Do: 
+<!-- BACKGROUND -->
+- Background api call get game art generate a graphic background.
+<!-- NAV -->
+- Search functionality with Nav search
+    - query the api.
+    - display the results that we care about.
+    - mark as want to play. user functionality?
+<!-- MAIN SEARCH -->
+- 
+
+
 
 - TESTING: JEST
     - https://jestjs.io/
@@ -49,4 +60,5 @@ To Do:
         - Style: Cooperative or Competitive?
 
     https://api-docs.igdb.com/#multiplayer-mode
+
 

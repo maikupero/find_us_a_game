@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
-import Axios from 'axios';
+import axios from 'axios';
+
+// Incomplete to get game art from external API and convert into dynamic visual background.
 
 const SAMPLE = 'https://reqres.in/api/users?page=2'
 useEffect(()=>{
@@ -13,11 +15,10 @@ useEffect(()=>{
       })
  },[])
 
-function Data() => {
-
-    return (
-
-    )
-}
+// function Data() => {
+//     return (
+//       <div></div>
+//     )
+// }
 
 export default Data

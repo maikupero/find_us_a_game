@@ -6,7 +6,7 @@ function Main() {
         <div className="main">
             <button className="start">Start</button>
         </div>
-    )
+    );
 }
 
 export default Main
